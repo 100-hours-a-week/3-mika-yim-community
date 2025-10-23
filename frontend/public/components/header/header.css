@@ -1,0 +1,83 @@
+.header-wrap {
+    position: fixed;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px 0px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ffffff;
+    border-bottom: 1px solid #394648;
+}
+
+/* 아무 말 대잔치 로고 */
+.logo {
+    color: #394648;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.header-icon-button {
+    /* 버튼 기본 스타일 제거 */
+    background: none;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 50%; /* 원형 버튼 */
+    transition: background-color 0.2s;
+}
+
+/* 버튼에 마우스를 올렸을 때 강조 */
+.header-icon-button:hover {
+    background-color: #F8E9E9;
+}
+
+/* 버튼 이미지 맞춤 */
+.header-icon-button img {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid #CBAC88;
+}
+
+.profile-container {
+    position: relative;
+}
+
+.header-dropdown-menu {
+    position: absolute;
+    top: 110%;
+    right: 0;
+    z-index: 100;
+    min-width: 150px;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid #F8E9E9;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    visibility: hidden;
+}
+
+.header-dropdown-menu.is-active {
+    visibility: visible;
+}
+
+.header-dropdown-menu a {
+    display: block;
+    padding: 10px 16px;
+    font-size: 14px;
+    color: #394648;
+    text-decoration: none;
+    text-align: center;
+}
+
+.header-dropdown-menu a:hover {
+    background-color: #F8E9E9;
+}
+
+.hidden {
+    visibility: hidden;
+}

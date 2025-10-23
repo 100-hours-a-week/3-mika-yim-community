@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/public/components/header/header.css" rel="stylesheet" type="text/css">
+    <link href="/public/components/layout/layout.css" rel="stylesheet" type="text/css">
+    <link href="post_detail.css" rel="stylesheet" type="text/css">
+    <title>아무말대잔치 게시글 상세조회</title>
+</head>
+
+<body>
+    <!-- 공용 헤더 -->
+    <header id="header-placeholder"></header>
+    <section class="wrap">
+        <main class="main-content">
+            <div class="post-placeholder" id="post-placeholder"></div>
+            <div class="comment-input">
+                <textarea class="comment-input-box" id="comment-input-box" placeholder="댓글 남기기" rows="5"
+                    maxlength="2000"></textarea>
+                <div class="input-status">
+                    <div class="char-counter" id="char-counter">0 / 2000</div>
+                    <button class="comment-button" id="comment-button">댓글 등록</button>
+                </div>
+            </div>
+            <div class="comment-list" id="comment-list"></div>
+            <div class="load-more-comments">
+                <button class="load-more-button" id="load-more-button" style="display: none;">댓글 더보기</button>
+            </div>
+        </main>
+    </section>
+    <script type="module" src="post_detail.js"></script>
+</body>
+
+</html>
